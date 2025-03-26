@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* 
+Paleta de Cores:
+Header: #353A63
+Palavras header: #FFFFFF
+Blocos de texto: #BFC3DA
+Fonte sobre nós: #353A63
+Fonte texto sobre nós: #6B7280
+Cor ícone (não utilizada mas está no figma): #6B7280
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+  
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  width: 100vw;
+}
+
+#users-container{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  
+}
+
+#exclusivo {
+    color: #353A63;
+    font-weight: 600;
+    /* font-size: 1rem; */
+    margin-bottom: 1rem;
+}
+
+#legenda-sobre {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #6B7280;
+}
+
+.user-name {
+    color: #353A63;
+    font-weight: bold;
+}
+
+.user-card {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 25px;
+    width: 300px;
+    height: 510px;
+}
+
+.user-card img {
+    width: 150px;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+.user-info {
+    padding: 10px;
+    align-self: baseline;
+}
+  
+.user-info h2,
+.user-info p {
+    margin: 15px 0;
+    font-size: medium;
+}
+  
+.user-info p {
+    background-color: white;
+    border-radius: 5px;
+}
+  
+.user-role, .descricao {
+  color: #6B7280;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+  
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.social-icon:hover {
+    background-color: #6B7280;
+    transition: 0.4s;
+}
+  
+.facebook {
+    background-color: #3b5998;
+}
+  
+.instagram {
+    background-color: #e1306c;
+}
+  
+.linkedin {
+    background-color: #0077b5;
+}
+  
+.github {
+      background-color: rgb(36, 35, 35);
+}
