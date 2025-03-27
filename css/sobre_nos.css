@@ -164,7 +164,6 @@ body {
     padding: 0.5rem;
     margin: 5px;
     color: #000;
-    
     text-decoration: none;
     /* border: 2px solid gray; */
 
@@ -254,6 +253,7 @@ body {
         justify-content: center;
         border-radius: 13px;
         border-bottom: 2px solid #2F3A8F;
+        text-decoration-line: none !important;
       }
     
       /* estilo do botão */

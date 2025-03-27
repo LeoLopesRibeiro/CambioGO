@@ -27,18 +27,36 @@ body {
 } 
 
 .legenda {
+  gap: 40px;
+  justify-content: center;
+  display: flex;
 
 }
 
 .chamada_acao {
+  justify-content: end;
+    display: flex;
+    align-items: center;
 
 }
 
 .cotacoes {
-    background-color: #fff;
+  background-color: #fff;
+  display: flex;
+  column-gap: 40px;
+  /* justify-content: space-evenly ; */
+  direction: column;
+  align-items: center;
 }
 
 .legenda_dois {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: poppins;
+ position: absolute;
 
 }
 
@@ -88,6 +106,15 @@ body {
 
 #menu a:hover{
   color: #2F3A8F;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  border-top: 1px solid #2F3A8F;
+  
 }
 
   /* faz o botão ficar invisivel */
@@ -164,6 +191,8 @@ body {
         justify-content: center;
         border-radius: 13px;
         border-bottom: 2px solid #2F3A8F;
+        text-decoration-line: none !important;
+
       }
     
       /* estilo do botão */
