@@ -19,6 +19,7 @@ body {
   background-color: rgba(162, 210, 255, 0.65);
   display: flex;
   width: 100vw;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 500px;
@@ -32,6 +33,7 @@ body {
 .texto-fundo-azul h2 {
   font-weight: 600;
   font-size: 2.9rem;
+  /* width: 100%; */
 }
 
 .imagem {
@@ -39,17 +41,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.legenda {
-  gap: 40px;
-
-}
-
-.chamada_acao {
-  justify-content: end;
-  display: flex;
-  align-items: center;
-
-}
 
 .cotacoes {
   display: flex;
@@ -59,6 +50,7 @@ body {
   height: 250px;
   gap: 40px;
 }
+
 #cards{
   display: flex;
   width: 100vw;
@@ -111,7 +103,6 @@ body {
 
   text-decoration: none;
   /* border: 2px solid gray; */
-
 }
 
 /* serviços são os p */
@@ -131,7 +122,6 @@ body {
   justify-content: center;
   width: 100vw;
   border-top: 1px solid #2F3A8F;
-
 }
 
 /* faz o botão ficar invisivel */
@@ -171,14 +161,31 @@ body {
 
   color: #2F3A8F;
 }
-
+@media (max-width: 870px) {
+  .homepage {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .texto-fundo-azul {
+    width: 100vw;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .imagem{
+    height: 200px;
+  }
+  .legenda{
+    width: 400px;
+  }
+}
 @media (max-width: 670px) {
   #header {
     display: flex;
     /* text-align: left; */
     background-color: #1c1c1cc2;
-  }
 
+  }
   #menu {
     width: 100%;
     /* display: none; */
