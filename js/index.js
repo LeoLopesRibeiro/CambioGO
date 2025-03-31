@@ -12,10 +12,10 @@ display.innerHTML = Object.entries(data)
     // console.log(value.name);
     return `<div class="container"> 
               <p id="nome">${value.name}</p>
-              <p id="high">Máximo: ${value.high}</p>
-              <p id="low">Mínimo: ${value.low}</p>
-              <p id="bid">Compra: ${value.bid}</p>
-              <p id="ask">Venda: ${value.ask}</p>
+              <p id="high">Máximo: ${Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(value.high)}</p>
+              <p id="low">Mínimo: ${Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(value.low)}</p>
+              <p id="bid">Compra: ${Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(value.bid)}</p>
+              <p id="ask">Venda: ${Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(value.ask)}</p>
             </div>`;
   })
   .join("");

@@ -62,22 +62,45 @@ body{
 }
 
 .container {
-  margin: 5px;
-  padding: 35px;
-  height: 300px;
-  width: 250px;
+  background-color: rgba(162, 210, 255, 0.65);
   border-radius: 10px;
-  background-color:  rgba(162, 210, 255, 0.65);
-  background: linear-gradient(180deg, #8bc3f1, rgba(162, 210, 255, 0.65));
-  align-self: center;
-  font-size: large;
-  text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transition: transform 0.3s, background-color 0.3s;
-  &:hover {
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
   transform: scale(1.05);
-  background-color: rgba(162, 210, 255, 0.85);
-  }
+}
+
+.container p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+#nome {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#high {
+  color: #008000;
+  font-weight: bold;
+}
+
+#low {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#bid, #ask {
+  font-weight: bold;
 }
 
 #menu {
@@ -168,6 +191,9 @@ body{
   }
 }
 @media (max-width: 670px) {
+  .container {
+    width: 90%;
+}
   .texto-fundo-azul {
     font-size: 1.3rem;
     /* margin-left: 20px; */
