@@ -21,8 +21,7 @@ Cor ícone (não utilizada mas está no figma): #6B7280
 }
   
 body {
-    display: flex;
-    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 #container{
   display: flex;
@@ -33,6 +32,7 @@ body {
 }
 
 #users-container{
+  gap: 20px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
@@ -180,14 +180,6 @@ font-size: 1.2rem;
 color: #2F3A8F;
 }
 
-.footer{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100vw;
-border-top: 1px solid #2F3A8F;
-
-}
 
 /* faz o botão ficar invisivel */
 #btn-mobile {
@@ -222,6 +214,14 @@ font-weight: 600;
   font-weight: 400;
 
   color: #2F3A8F;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 20px;
+  border-top: 1px solid #2F3A8F;
 }
 
 @media (max-width: 670px) {

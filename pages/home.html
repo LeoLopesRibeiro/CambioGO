@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <title>Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-</head>
-
-<body>
-  <header id="cabecalho">
-    <div id="div-logo">
-      <img src="../img/logo.svg" alt="Logo CambioGo" height="40px">
-      <!-- adicionar o icone -->
-      <h1 id="Logo">CambioGO</h1>
-    </div>
-    <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-        aria-expanded="false">Menu
-        <span id="hamburguer"></span>
-      </button>
-      <ul id="menu" role="menu">
-
-        <li>
-          <a class="servicos" href="./home.html" style=" text-decoration-line: underline; ">Home</a>
-        </li>
-        <li>
-          <a class="servicos" href="./sobre_nos.html">Sobre nós</a>
-        </li>
-        <li>
-          <a class="servicos">Login</a>
-        </li>
-  </header>
-  <div class="tudo">
+  <body>
+    <header id="cabecalho">
+      <div id="div-logo">
+        <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+        <!-- adicionar o icone -->
+        <h1 id="Logo">CambioGO</h1>
+      </div>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li>
+            <a
+              class="servicos"
+              href="./home.html"
+              style="text-decoration-line: underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="servicos" href="./sobre_nos.html">Sobre nós</a>
+          </li>
+          <li>
+            <a class="servicos">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="homepage">
-      <img src="../img/notebook_home.jfif" alt="Foto do notebook" class="imagem" height="400px" />
+      <img
+        src="../img/notebook_home.jfif"
+        alt="Foto do notebook"
+        class="imagem"
+        height="400px"
+      />
       <div class="texto-fundo-azul">
         <h2 class="legenda">Sua Conversão de Moedas Rápida e Segura</h2>
         <p class="chamada_acao">
@@ -50,18 +68,14 @@
 
     <div class="cotacoes">
       <h2 class="legenda_dois">Cotações em Tempo Real</h2>
-      <div id="cards">
-
-      </div>
+      <div id="cards"></div>
     </div>
-  </div>
-  <footer class = "footer">
-    <img src="../img/logo.svg" alt="Logo CambioGo" height="40px">
-    <!-- adicionar o icone -->
-    <h1 id="Logo">CambioGO</h1>
-  </footer>
-  <script src="../js/index.js" type="module"></script>
-  <script src="../js/menu.js"></script>
-</body>
-
+    <footer class="footer">
+      <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+      <!-- adicionar o icone -->
+      <h1 id="Logo">CambioGO</h1>
+    </footer>
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/menu.js"></script>
+  </body>
 </html>

@@ -21,4 +21,3 @@ display.innerHTML = Object.entries(data)
 // Object.entries(data).map(([key, value]) => {});
 
 //menu
-
