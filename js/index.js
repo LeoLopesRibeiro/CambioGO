@@ -12,12 +12,12 @@ display.innerHTML = Object.entries(data)
     // console.log(value.name);
     return `<div class="container"> 
               <p id="nome">${value.name}</p>
-              <p id="high">High: ${value.high}</p>
-              <p id="low">Low: ${value.low}</p>
+              <p id="high">Máximo: ${value.high}</p>
+              <p id="low">Mínimo: ${value.low}</p>
+              <p id="bid">Compra: ${value.bid}</p>
+              <p id="ask">Venda: ${value.ask}</p>
             </div>`;
   })
   .join("");
 
 // Object.entries(data).map(([key, value]) => {});
-
-//menu

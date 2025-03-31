@@ -10,14 +10,12 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
+
 body{
   overflow-x: hidden;
 }
 
-
-
 .homepage {
-
   background-color: rgba(162, 210, 255, 0.65);
   display: flex;
   width: 100vw;
@@ -45,8 +43,10 @@ body{
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  height: 250px;
+  height: max-content;
   gap: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #cards{
@@ -54,11 +54,8 @@ body{
   width: 100vw;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
-.legenda_dois {}
-
-.converter {}
 
 .retangulos {
   background-color: rgba(162, 210, 255, 0.65);
@@ -66,16 +63,22 @@ body{
 
 .container {
   margin: 5px;
-  padding: 5px;
-  height: 100px;
-  border: 1.5px solid #000;
+  padding: 35px;
+  height: 300px;
+  width: 250px;
+  /* border: 1.5px solid #fffbfb; */
   border-radius: 10px;
-}
-.high{
-
-}
-.low{
-
+  background-color:  rgba(162, 210, 255, 0.65);
+  background: linear-gradient(180deg, #8bc3f1, rgba(162, 210, 255, 0.65));
+  align-self: center;
+  font-size: large;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 0.3s, background-color 0.3s;
+  &:hover {
+  transform: scale(1.05);
+  background-color: rgba(162, 210, 255, 0.85);
+  }
 }
 
 #menu {
@@ -89,21 +92,15 @@ body{
   padding-right: 20px;
 }
 
-/* os textos do menu */
 #menu a {
   display: flex;
-
   align-items: center;
-  /* justify-content: space-ar; */
   padding: 0.5rem;
   margin: 5px;
   color: #000;
-
   text-decoration: none;
-  /* border: 2px solid gray; */
 }
 
-/* serviços são os p */
 .servicos {
   font-weight: 600;
   cursor: pointer;
@@ -122,23 +119,18 @@ body{
   border-top: 1px solid #2F3A8F;
 }
 
-/* faz o botão ficar invisivel */
 #btn-mobile {
   display: none;
   font-weight: 600;
 }
 
-/* cabeçalho é a barra inteira do menu */
 #cabecalho {
-  /* margin-bottom: 5px; */
   border-bottom: 1.5px solid #2F3A8F;
   width: 100vw;
   background-color: #ffffff;
   display: flex;
-  /* position: relative; */
   list-style: none;
   color: white;
-
   height: 80px;
   justify-content: space-between;
   align-items: center;
@@ -151,25 +143,27 @@ body{
   align-items: center;
 }
 
-#Logo {
+#logo {
   padding: 20px 20px 20px 20px;
   cursor: pointer;
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
-
   color: #2F3A8F;
 }
+
 @media (max-width: 870px) {
   .homepage {
     height: auto;
     flex-direction: column;
     padding: 20px;
   }
+
   .texto-fundo-azul {
     width: 80vw;
     font-size: 2rem;
     margin-left: 20px;
   }
+
   .legenda{
     width: 80vw;
   }
@@ -179,23 +173,23 @@ body{
     font-size: 1.3rem;
     /* margin-left: 20px; */
   }
+
   .imagem{
     display: none;
   }
+
   #header {
     display: flex;
     /* text-align: left; */
     background-color: #1c1c1cc2;
-
   }
+
   #menu {
     width: 100%;
-    /* display: none; */
     display: block;
     position: absolute;
     text-align: center;
     width: 100%;
-
     top: 70px;
     right: 0px;
     background-color: #fff;
@@ -208,7 +202,6 @@ body{
   }
 
   #nav.active #menu {
-    /* display: block; */
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
@@ -224,7 +217,6 @@ body{
 
   }
 
-  /* estilo do botão */
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -233,10 +225,8 @@ body{
     background: none;
     align-items: center;
     cursor: pointer;
-    /* color: white; */
   }
 
-  /* cria o primeiro pedaço */
   #hamburguer {
     margin-left: 0.7rem;
     width: 20px;
@@ -245,7 +235,6 @@ body{
     color: #000;
   }
 
-  /* cria os outros dois pedaços do hamburguer */
   #hamburguer::after,
   #hamburguer::before {
     content: "";
@@ -258,12 +247,10 @@ body{
     position: relative;
   }
 
-  /* faz a parte de cima do hamburguer desaparecer */
   #nav.active #hamburguer {
     border-top-color: transparent;
   }
 
-  /* as partes a seguir fazem a rotação do hamburguer */
   #nav.active #hamburguer::before {
     transform: rotate(135deg);
   }
