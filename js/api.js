@@ -1,18 +1,39 @@
-async function api(caminho){
-    
-    const response = await fetch(`https://economia.awesomeapi.com.br/json/last/${caminho}`);
-    if(!response){
-        return console.log("Houve um erro de busca, a API não retornou nada")
-    }
-    if(response.status != 200){
-        return console.log("Houve um erro de busca", response.status);
-    }
+export async function api(caminho) {
+  const response = await fetch(
+    `https://economia.awesomeapi.com.br/json/last/${caminho}`
+  );
+  if (!response) {
+    return console.log("Houve um erro de busca, a API não retornou nada");
+  }
+  if (response.status != 200) {
+    return console.log("Houve um erro de busca", response.status);
+  }
 
-    let result = response.json();
+  let result = response.json();
 
-    // console.log(result);
+  // console.log(result);
 
-    return result;
+  return result;
 }
 
-export default api;
+export async function apiLogin(email, senha) {
+    try {
+        const response = await fetch("http://localhost:3001/accounts/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email, senha })
+        });
+    
+        if (!response.ok) {
+          throw new Error(`Erro ${response.status}: ${response.statusText}`);
+        }
+    
+        const result = await response.json();
+        return result;
+      } catch (error) {
+        console.error("Erro ao fazer login:", error.message);
+        return null;
+      }
+}

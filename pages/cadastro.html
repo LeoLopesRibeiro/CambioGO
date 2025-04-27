@@ -1,84 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/cadastro.css" />
     <title>Cadastre-se</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-</head>
-<body>
+  </head>
+
+  <body>
     <header id="cabecalho">
-        <div id="div-logo">
-          <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-          <h1 id="logo">CambioGO</h1>
+    
+    </header>
+    <div id="tudo">
+      <div id="quadrado">
+        <div id="cadastre">
+            <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+            <p class="chamada">Cadastre-se</p>
+            <p class="preencher">Preencha o formulário</p>
         </div>
-
-        <nav id="nav">
-          <button
-            aria-label="Abrir Menu"
-            id="btn-mobile"
-            aria-haspopup="true"
-            aria-controls="menu"
-            aria-expanded="false"
-          >
-            <span id="hamburguer"></span>
-          </button>
-          <ul id="menu" role="menu">
-            <li>
-              <a
-                class="servicos"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="servicos" href="../pages/sobre_nos.html">Sobre nós</a>
-            </li>
-            <li>
-              <a class="servicos"
-              href="./cadastro.html"
-              style="text-decoration-line: underline"
-              >Login</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-  <div id="tudo">
-    <div id="quadrado">
-      <div id="cadastre">
-          <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-          <p class="chamada">Cadastre-se</p>
-          <p class="preencher">Preencha o formulário</p>
-      </div>
-
-      <div id="form-container">
-          <form id="register-form">
-              <div id="name-container">
-                <input type="text" name="name" id="name" placeholder="Insira seu nome" />
-              <input type="email" name="email" id="email"  placeholder="Insira seu e-mail"
-              />
-              <input type="password" name="password" id="password"
-               placeholder="Insira sua senha"
-              />
-              <input type="password" name="password" id="password"
-              placeholder="Confirme sua senha"
-             />
-              <input type="submit" value="Criar a minha conta" />
-            </div>
-            </form>
-      </div>
+  
+        <div id="form-container">
+            <form id="register-form">
+                <div id="name-container">
+                  <input type="text" name="name" id="name" placeholder="Insira seu nome" />
+                <input type="email" name="email" id="email"  placeholder="Insira seu e-mail"
+                />
+                <input type="password" name="password" id="password"
+                 placeholder="Insira sua senha"
+                />
+                <input type="password" name="password" id="password"
+                placeholder="Confirme sua senha"
+               />
+                <input type="submit" value="Criar a minha conta" />
+              </div>
+              </form>
+        </div>
+    </div>
   </div>
-</div>
-<footer class="footer">
-    <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-        <!-- adicionar o icone -->
-    <h1 id="logo">CambioGO</h1>
-</footer>
-      <!--<script src="../js/index.js" type="module"></script> -->
-    <script src="../js/menu.js"></script>
-</body>
+    <footer class="footer">
+      <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+      <!-- adicionar o icone -->
+      <h1 id="logo">CambioGO</h1>
+    </footer>
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+    
+  </body>
 </html>
