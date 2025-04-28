@@ -114,12 +114,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
     justify-content: center;
 }
   
 #form-container {
     flex: 1.1;
-    height: 783px; 
+    height: 783px;
+    background-size: cover;
 }
   
 #register-form {
@@ -150,26 +152,25 @@ body{
 }
 
 .login {
-  color: #fff;
+    color: #fff;
 }
-
+  
 .login2 {
-  color: #fff;
+    color: #fff;
 }
-
+  
 .login2:hover {
-  color: #6eaeb9;
-  transition: 0.4s;
+    color: #6eaeb9;
+    transition: 0.4s;
 }
 
 @media (max-width: 720px) {
     .container {
       width: 90%;
-  }
-  
+    }
+
     #header {
       display: flex;
-      /* text-align: left; */
       background-color: #1c1c1cc2;
     }
   
@@ -246,6 +247,6 @@ body{
   
     #nav.active #hamburguer::after {
       transform: rotate(-135deg);
-      top: -7px; 
+      top: -7px;
     }
-  }
+}
