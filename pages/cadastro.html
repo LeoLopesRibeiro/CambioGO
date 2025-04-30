@@ -11,9 +11,7 @@
     />
   </head>
   <body>
-    <header id="cabecalho">
-    
-    </header>
+    <header id="cabecalho"></header>
     <div id="tudo">
       <div id="quadrado">
         <div id="form-container">
@@ -38,7 +36,54 @@
       </div>
         <div id="quadrado-dois">
           <p class="login">Já possui cadastro?</p> <a class="login2" href="./login.html">Fazer login</a>
+        <div id="cadastre">
+          <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+          <p class="chamada">Cadastre-se</p>
+          <p class="preencher">Preencha o formulário</p>
         </div>
+
+        <div id="form-container">
+          <form id="register-form">
+            <div id="name-container">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Insira seu nome"
+              />
+            </div>
+            <div id="name-container">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Insira seu e-mail"
+              />
+            </div>
+            <div id="name-container">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Insira sua senha"
+              />
+            </div>
+            <div id="name-container">
+              <input
+                type="password"
+                name="confirm"
+                id="confirm_password"
+                placeholder="Confirme sua senha"
+              />
+            </div>
+            <div id="name-container">
+              <input type="submit" value="Criar a minha conta" />
+            </div>
+          </form>
+          <p class="login">Já possui cadastro?</p>
+          <a class="login2" href="./login.html">Fazer login</a>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
@@ -46,6 +91,7 @@
       <h1 id="logo">CambioGO</h1>
     </footer>
     <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/cadastro.js"></script>
     <script type="module" src="../js/menu.js"></script>
   </body>
 </html>
