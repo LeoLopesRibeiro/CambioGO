@@ -10,36 +10,35 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
+
   <body>
     <header id="cabecalho">
     </header>
-    <div id="tudo">
-      <div id="quadrado">
-        <div id="cadastre">
-          <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-          <p class="chamada">Login</p>
-          <p class="preencher">Preencha o formulário</p>
-        </div>
 
-        <div id="form-container">
-          <form id="login-form">
-            <div id="name-container"> <input type="email" name="email" id="email"  placeholder="Insira seu e-mail"
-              /> </div> 
-               <div id="name-container"> <input type="password" name="password" id="password"
-               placeholder="Insira sua senha"
-              /> </div> 
-              <div id="name-container"> <input type="submit" value="Acessar a minha conta" /> </div> 
-            </div>
+    <main>
+      <div id="container-login">
+        <div class="esquerda">
+          <h2 class="entrar">Entrar</h2>
+          <form>
+            <input type="text" placeholder="Usuário" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
           </form>
-          <p class="login">Ainda não possui cadastro?</p> <a class="login2" href="./cadastro.html">Cadastre-se</a>
+        </div>
+  
+        <div class="direita">
+          <h2>Bem-vindo ao CambioGO!</h2>
+          <p>Não possui uma conta?</p>
+          <a href="cadastro.html" class="btn-cadastro">Inscreva-se</a>
         </div>
       </div>
-    </div>
+    </main>
+  
     <footer class="footer">
       <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-      <!-- adicionar o icone -->
       <h1 id="logo">CambioGO</h1>
     </footer>
+
     <!--<script src="../js/index.js" type="module"></script> -->
     <script type="module" src="../js/menu.js"></script>
     <script type="module" src="../js/auth.js"></script>
