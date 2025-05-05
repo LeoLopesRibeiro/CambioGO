@@ -147,16 +147,28 @@ body{
 }
 
 #cabecalho {
-  border-bottom: 1.5px solid #2F3A8F;
-  width: 100vw;
-  background-color: #ffffff;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #2F3A8F;
+  width: 100vw;
   list-style: none;
   color: white;
   height: 80px;
-  justify-content: space-between;
-  align-items: center;
   padding-right: 20px;
+}
+
+#cabecalho nav a {
+  margin: 0 0.1rem;
+  text-decoration: none;
+  color: #2F3A8F;
+  font-weight: 500;
+}
+
+#cabecalho nav a:hover {
+  color: #4957d6;
 }
 
 #div-logo {
