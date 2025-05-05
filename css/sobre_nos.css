@@ -22,7 +22,9 @@ Cor ícone (não utilizada mas está no figma): #6B7280
   
 body {
     overflow-x: hidden;
+    background-color: #cdeafd;
 }
+
 #container{
   display: flex;
   flex-direction: column;
@@ -45,7 +47,7 @@ body {
 }
 
 #exclusivo {
-    color: #353A63;
+    color: #2F3A8F;
     font-weight: 600;
     /* font-size: 1rem; */
     margin-bottom: 1rem;
@@ -58,7 +60,7 @@ body {
 }
 
 .user-name {
-    color: #353A63;
+    color: #2F3A8F;
     font-weight: bold;
 }
 
@@ -180,7 +182,6 @@ font-size: 1.2rem;
 color: #2F3A8F;
 }
 
-
 /* faz o botão ficar invisivel */
 #btn-mobile {
 display: none;
@@ -202,11 +203,13 @@ font-weight: 600;
   align-items: center;
   padding-right: 20px;
 }
+
 #div-logo{
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
+
 #logo{
   padding: 20px 20px 20px 20px;
   cursor: pointer;
@@ -215,13 +218,15 @@ font-weight: 600;
 
   color: #2F3A8F;
 }
+
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  margin-top: 20px;
+  padding: 1rem;
   border-top: 1px solid #2F3A8F;
+  background-color: #ffffff;
+  width: 100vw;
 }
 
 @media (max-width: 720px) {
