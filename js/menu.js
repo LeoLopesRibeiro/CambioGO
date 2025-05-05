@@ -30,7 +30,7 @@ cabecalho.innerHTML = `
         !isAuthenticated()
           ? `<li><a class="servicos" data-path="/pages/login.html" id="login_favoritos">Login</a></li>
         <li><a class="servicos" data-path="/pages/cadastro.html">Cadastro</a></li>`
-          : `  <li><a class="servicos" data-path="/pages/perfil.html">Perfil</a></li>
+          : `  <li><a class="servicos" data-path="/pages/cambio.html">Cambio</a></li>
           <button id='logout-btn'>Sair</button>
           `
       }
@@ -84,9 +84,3 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
-
-// 4. Exibir algo diferente se o usuário estiver autenticado
-if (isAuthenticated()) {
-  const loginLink = document.getElementById("login_favoritos");
-  if (loginLink) loginLink.innerHTML = "Favoritos";
-}

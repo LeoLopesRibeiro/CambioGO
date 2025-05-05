@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cambio.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="cabecalho"></header>
+    <main>
+      <div class="converter-container">
+        <div class="row">
+          <div class="column">
+            <label class="label">Valor a converter</label>
+            <div class="input-group">
+              <input type="number" id="convert-value" value="1000.00" />
+
+              <select id="convert"></select>
+            </div>
+            <div class="div-text">
+              <p id="name-converter"></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="../img/Vector.png" alt="Ícone de troca" />
+          </div>
+          <div class="column">
+            <label class="label">Valor convertido</label>
+            <div class="input-group">
+              <input type="number" value="0" id="converted-value" readonly />
+            </div>
+          </div>
+        </div>
+        <div id="buttons">
+          <button id="convert-button">Converter agora</button>
+          <button id="convert-button">Comprar moedas</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
+      <h1 id="logo">CambioGO</h1>
+    </footer>
+
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/cambio.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+  </body>
+</html>

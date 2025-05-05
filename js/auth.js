@@ -14,6 +14,6 @@ export function logout() {
 if(isAuthenticated() && (window.location.pathname == "/pages/login.html" ||  window.location.pathname == "/pages/cadastro.html")){
     window.location.href = "../index.html";
 }
-if(!isAuthenticated() && window.location.pathname == "/pages/perfil.html"){
+if(!isAuthenticated() && window.location.pathname == "/pages/cambio.html"){
     window.location.href = "../index.html";
 }

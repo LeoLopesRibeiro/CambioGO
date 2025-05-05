@@ -15,7 +15,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #cdeafd;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 #cabecalho {
@@ -49,11 +49,12 @@ body {
   align-items: center;
   height: calc(100vh - 160px);
   gap: 0;
+  padding: 20px;
 }
 
 .esquerda, .direita {
   width: 400px;
-  height: 500px;
+  height: 400px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -106,7 +107,7 @@ body {
 }
 
 .btn-cadastro {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
@@ -265,4 +266,15 @@ body {
       transform: rotate(-135deg);
       top: -7px;
     }
+}
+
+@media (max-width: 560px){
+  .esquerda, .direita{
+    height: min-content;
+    border-radius: 0;
+  }
+  #container-login{
+    flex-direction: column;
+    /* height: 100%; */
+  }
 }

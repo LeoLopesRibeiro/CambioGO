@@ -10,9 +10,6 @@ form.addEventListener("submit", async (event) => {
 
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
-
-  console.log(data);
-
   const response = await apiLogin(data.email, data.password);
 
   if (response) {
