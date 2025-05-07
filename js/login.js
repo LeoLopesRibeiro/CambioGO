@@ -13,7 +13,6 @@ form.addEventListener("submit", async (event) => {
   const response = await apiLogin(data.email, data.password);
 
   if (response) {
-    // console.log(response);
     login(response.token);
     window.location.href = "../index.html";
   } else {

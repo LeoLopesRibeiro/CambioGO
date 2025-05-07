@@ -8,7 +8,6 @@ const display = document.querySelector("#cards");
 display.innerHTML = Object.entries(data)
   .map(([key, value]) => {
 
-    // console.log(value.name);
     return `<div class="container"> 
               <p id="nome">${value.name}</p>
               <p id="high">Máximo: ${Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(value.high)}</p>

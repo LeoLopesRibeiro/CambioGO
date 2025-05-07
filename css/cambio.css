@@ -91,7 +91,7 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 #menu a {
@@ -154,7 +154,7 @@ main{
   align-items: center;
 }
 
-input[type="number"] {
+.input-group input {
   padding: 8px 12px;
   font-size: 18px;
   border: 1px solid #ccc;
@@ -252,7 +252,7 @@ select {
 
   #btn-mobile {
     display: flex;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
     font-size: 1rem;
     border: none;
     background: none;

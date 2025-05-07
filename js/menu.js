@@ -40,7 +40,6 @@ cabecalho.innerHTML = `
   </nav>
 `;
 if (isAuthenticated()) {
-  console.log("Entrou");
   document.getElementById("logout-btn")?.addEventListener("click", () => {
     logout();
     location.reload();
