@@ -3,50 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <title>Home</title>
+    <link
+      rel="icon"
+      href="src/assets/icons/logo-cambio-go.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <title>CambioGO</title>
   </head>
 
   <body>
-    <header id="cabecalho">
-      
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo">
+          <img src="src/assets/icons/logo-cambio-go.svg" alt="CambioGO Logo" />
+          <span class="header__logo-text">CambioGO</span>
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">Home</a></li>
+          <li class="header__menu-item"><a href="#">Serviço</a></li>
+          <li class="header__menu-item"><a href="#">Sobre a Empresa</a></li>
+          <li class="header__menu-item"><a href="#">Equipe</a></li>
+        </ul>
+        <div class="header__buttons">
+          <button class="button button--secondary">Login</button>
+          <button class="button button--primary">Sign up</button>
+        </div>
+      </nav>
     </header>
-    <div class="homepage">
-      <img
-        src="./img/notebook_home.jfif"
-        alt="Foto do notebook"
-        class="imagem"
-        height="400px"
-      />
-      <div class="texto-fundo-azul">
-        <h2 class="legenda">Sua Conversão de Moedas Rápida e Segura</h2>
-        <p class="chamada_acao">
-          Descubra o valor do seu dinheiro em qualquer moeda, com taxas
-          atualizadas e confiáveis. Planeje suas viagens, investimentos e
-          negócios com a melhor cotação.
+
+    <section class="hero">
+      <img src="src/assets/images/hero_image.png" alt="" />
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1>Converta moedas com agilidade e segurança</h1>
+          <p>
+            Taxas atualizadas e transparentes para você planejar seu próximo
+            passo.
+          </p>
+        </div>
+        <a href="">Ver a cotação atual</a>
+      </div>
+    </section>
+
+    <!-- implementar cards de cotações -->
+    <section id="cotacao" class="cotacao">
+      <h2>Cotações em tempo real</h2>
+    </section>
+
+    <section class="cta">
+      <div class="cta__content">
+        <h2>Conversão de moedas fácil e eficiente</h2>
+        <p>
+          Obtenha cotações precisas e atualizadas para operações ágeis em
+          viagens, negócios ou qualquer necessidade.
         </p>
       </div>
-    </div>
+    </section>
 
-    <!-- <button class="converter">Converter agora</button> -->
+    <!-- implementar card de conversão em tempo real -->
+    <section class="conversao">
+      <h2>Experimente Agora a Conversão de Moedas</h2>
+    </section>
 
-    <div class="cotacoes">
-      <h2 class="legenda_dois">Cotações em Tempo Real</h2>
-      <div id="cards"></div>
-    </div>
-    <footer class="footer">
-      <img src="./img/logo.svg" alt="Logo CambioGo" height="40px" />
-      <!-- adicionar o icone -->
-      <h1 id="logo">CambioGO</h1>
+    <section class="about__cambiogo">
+      <div class="about__cambiogo-content">
+        <h2>CambioGO – Câmbio Digital Simples e Confiável</h2>
+        <p>
+          Troque moedas com transparência e agilidade. Conheça nossa missão,
+          visão e valores para entender por que somos a melhor escolha no
+          mercado global.
+        </p>
+      </div>
+      <div class="about__cambiogo-content">
+        <h2>Cérebro & Código</h2>
+        <p>
+          Por trás de toda cotação precisa, há pessoas comprometidas. Somos uma
+          equipe de especialistas em finanças e tecnologia, unidos para garantir
+          segurança e facilidade em cada operação. Conheça quem faz o CambioGO
+          funcionar!
+        </p>
+      </div>
+      <div class="button-list">
+        <a href="" class="button button--tertiary">Quem Faz Acontecer</a>
+        <a href="" class="button button--primary">Conheça Nossa Missão</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright__content">
+        <div class="footer__logo">
+          <img src="src/assets/icons/white-logo-cambio-go.svg" alt="" />
+          <span>CambioGO</span>
+        </div>
+        <div class="footer__copyright">
+          <span>Copyright &copy; 2025 CambioGO Ltd.</span>
+          <span>Todos os direitos reservados</span>
+        </div>
+      </div>
+
+      <div class="copyright__content">
+        <div class="footer__info">
+          <span>Fale Conosco</span>
+        </div>
+        <div class="footer__contact">
+          <span>(11) 1234-1234</span>
+          <span>(11) 5678-5678</span>
+          <span>Av. Paulista - São Paulo, SP</span>
+          <span>contato@cambiogo.com.br</span>
+        </div>
+      </div>
+
+      <div class="copyright__content">
+        <div class="footer__support">
+          <span>Suporte</span>
+        </div>
+        <div class="footer__policy">
+          <span>Política de Privacidade</span>
+          <span>Termos e Condições</span>
+          <span>Sobre nós</span>
+          <span>FAQ</span>
+        </div>
+      </div>
     </footer>
-
-    <script type="module" src="./js/index.js"></script>
-    <script type="module" src="./js/menu.js"></script>
-    <script type="module" src="./js/auth.js"></script>
-    <!-- <script type="module" src="./js/login.js"></script> -->
   </body>
 </html>

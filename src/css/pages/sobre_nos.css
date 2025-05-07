@@ -22,9 +22,7 @@ Cor ícone (não utilizada mas está no figma): #6B7280
   
 body {
     overflow-x: hidden;
-    background-color: #cdeafd;
 }
-
 #container{
   display: flex;
   flex-direction: column;
@@ -47,7 +45,7 @@ body {
 }
 
 #exclusivo {
-    color: #2F3A8F;
+    color: #353A63;
     font-weight: 600;
     /* font-size: 1rem; */
     margin-bottom: 1rem;
@@ -60,7 +58,7 @@ body {
 }
 
 .user-name {
-    color: #2F3A8F;
+    color: #353A63;
     font-weight: bold;
 }
 
@@ -147,25 +145,29 @@ body {
     border-radius: 10px;
 }
 
-#menu {
+#menu{
   display: flex;
   list-style: none;
-  width: 100%;
+ 
   height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding-right: 20px;
 }
-
 /* os textos do menu */
 #menu a {
   display: flex;
+
   align-items: center;
+  /* justify-content: space-ar; */
   padding: 0.5rem;
   margin: 5px;
-  color: #000; 
+  color: #000;
+  
   text-decoration: none;
+  /* border: 2px solid gray; */
+
 }
 /* serviços são os p */
 .servicos{
@@ -178,59 +180,48 @@ font-size: 1.2rem;
 color: #2F3A8F;
 }
 
+
 /* faz o botão ficar invisivel */
 #btn-mobile {
 display: none;
 font-weight: 600;
 }
 /* cabeçalho é a barra inteira do menu */
-#cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #2F3A8F;
+#cabecalho{
+  margin-bottom: 5px;
+  border-bottom: 1.5px solid #2F3A8F;
   width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  /* position: relative; */
   list-style: none;
   color: white;
+  
   height: 80px;
+  justify-content:space-between;
+  align-items: center;
   padding-right: 20px;
 }
-
-#cabecalho nav a {
-  margin: 0 0.1rem;
-  text-decoration: none;
-  color: #2F3A8F;
-  font-weight: 500;
-}
-
-#cabecalho nav a:hover {
-  color: #4957d6;
-}
-
 #div-logo{
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
-
 #logo{
   padding: 20px 20px 20px 20px;
   cursor: pointer;
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
+
   color: #2F3A8F;
 }
-
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  border-top: 1px solid #2F3A8F;
-  background-color: #ffffff;
   width: 100vw;
+  margin-top: 20px;
+  border-top: 1px solid #2F3A8F;
 }
 
 @media (max-width: 720px) {
