@@ -148,6 +148,95 @@ li a {
   font-weight: 600;
 }
 
+/* ----------- CARDS --------------*/
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.icon-circle {
+  background-color: #dbeafe;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: #4b5563;
+}
+
+.value {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.value.up {
+  color: #16a34a; /* Verde */
+}
+
+.card-footer {
+  background-color: #f9fafb;
+  padding: 16px 24px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer-text {
+  color: #6b7280;
+}
+
 /* ------------ CTA ------------ */
 
 .cta {
