@@ -23,6 +23,7 @@ Cor ícone (não utilizada mas está no figma): #6B7280
 body {
     overflow-x: hidden;
     background-color: #cdeafd;
+    overflow-y: hidden;
 }
 
 #container{
@@ -57,6 +58,18 @@ body {
     font-weight: 500;
     margin-bottom: 1rem;
     color: #6B7280;
+}
+
+#logout-btn {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3A8F;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-name {

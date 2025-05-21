@@ -80,8 +80,7 @@ body{
 
 .container p {
   margin: 5px 0;
-  font-size: 16px;
-  color: #333;
+  font-size: 1rem;
 }
 
 #nome {
@@ -123,6 +122,28 @@ body{
   text-decoration: none;
 }
 
+.chamativa {
+  background: linear-gradient(180deg, #1A1B41 0%, #4345A7 50%, #2F3A8F 100%);
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  width: 1920px;
+  height: 350px;
+}
+
+#logout-btn {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3A8F;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .servicos {
   font-weight: 600;
   cursor: pointer;
@@ -158,13 +179,14 @@ body{
   color: white;
   height: 80px;
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 #cabecalho nav a {
   margin: 0 0.1rem;
   text-decoration: none;
-  color: #2F3A8F;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 400;
 }
 
 #cabecalho nav a:hover {
@@ -183,6 +205,31 @@ body{
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   color: #2F3A8F;
+}
+
+.legenda2 {
+  padding-top: 90px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.chamada_acao2 {
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.legendas {
+  color: #131313;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 30px;
+}
+
+.legenda_dois {
+  font-size: 30px;
 }
 
 @media (max-width: 870px) {

@@ -49,6 +49,18 @@ main{
   color: #4957d6;
 }
 
+#logout-btn {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3A8F;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #container-login {
   display: flex;
   justify-content: center;
