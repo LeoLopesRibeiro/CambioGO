@@ -21,17 +21,22 @@ Cor ícone (não utilizada mas está no figma): #6B7280
 }
   
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     overflow-x: hidden;
-    background-color: #cdeafd;
-    overflow-y: hidden;
+ 
 }
 
 #container{
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding: 10px;
+  align-items: center;
+  /* padding: 20px; */
   width: 100vw;
+  text-align: center
+
 }
 
 #users-container{
@@ -48,16 +53,17 @@ body {
 }
 
 #exclusivo {
-    color: #2F3A8F;
+    color: #000000;
     font-weight: 600;
     /* font-size: 1rem; */
     margin-bottom: 1rem;
 }
 
 #legenda-sobre {
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: #6B7280;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #030404;
+    
 }
 
 #logout-btn {
@@ -71,7 +77,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.sobre {
+  width: 720px;
+  
+}
+.cor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  /* max-width: 1024px;  */
+  padding: 30px; 
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #cdeafd;
+  
+}
 .user-name {
     color: #2F3A8F;
     font-weight: bold;
@@ -159,7 +180,6 @@ body {
     border: 1.5px solid #000;
     border-radius: 10px;
 }
-
 #menu {
   display: flex;
   list-style: none;
