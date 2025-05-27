@@ -60,7 +60,7 @@ const pathAtual = window.location.pathname;
 document.querySelectorAll(`a[data-path="${pathAtual}"]`).forEach((link) => {
 //    const linkCerto = link.getAttribute("data-path")
 //    console.log(linkCerto)
-    link.style.textDecoration = "underline";
+    link.style.fontWeight = "650";
   });
 
 

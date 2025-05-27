@@ -50,15 +50,16 @@ main{
 }
 
 #logout-btn {
-  display: flex;
   padding: 0.75rem 1.5rem;
   background-color: #2F3A8F;
   color: white;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 #container-login {
@@ -71,14 +72,31 @@ main{
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-top: 1px solid #2f3a8f;
-  background-color: #ffffff;
+  background-color: #0f1a3a;
+  color: #fff;
+  border-top: 2px solid white;
+  font-family: "Poppins";
+  padding: 40px 20px;
   width: 100vw;
 }
+
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  /* justify-content: space-between; */
+  width: 100vw;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 100px;
+}
+
+.footer-column p {
+  margin: 4px 0;
+}
+
 
 #logo {
   margin-left: 1rem;
@@ -206,7 +224,7 @@ select {
     display: flex;
 }
 
-#convert-button {
+#convert-button, #buy-button {
   background-color: #1a73e8;
   color: #fff;
   border: none;
@@ -220,6 +238,171 @@ select {
   background-color: #155ec1;
 }
 
+.all{
+    min-height: 100vh;
+    height: min-content;
+    /* background: #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.all form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.all form .inputBox{
+    margin-top: 20px;
+}
+
+.all form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.all form .inputBox input,
+.all form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.all form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.all form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.all form .submit-btn{
+    width: 100%;
+    background-color: #1a73e8;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.all form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.all .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.all .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, #2f3a8f, #1a73e8);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.all .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.all .card-container .front .image img{
+    height: 50px;
+}
+
+.all .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.all .card-container .front .flexbox{
+    display: flex;
+}
+
+.all .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.all .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.all .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, #2f3a8f, #1a73e8);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.all .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.all .card-container .back .box{
+    padding: 0 20px;
+}
+
+.all .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.all .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.all .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+.invisible{
+  display: none;
+}
 @media (max-width: 720px) {
   .container {
     width: 90%;

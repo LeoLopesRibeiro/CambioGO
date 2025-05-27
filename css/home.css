@@ -41,11 +41,12 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 30px;
   height: max-content;
   gap: 40px;
   padding-bottom: 20px;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 #cards{
@@ -61,14 +62,17 @@ body{
 }
 
 .container {
-  /* background-color: rgba(162, 210, 255, 0.65); */
-  background: linear-gradient(180deg, #8bc3f1, rgba(162, 210, 255, 0.65));
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  padding: 20px;
-  margin: 10px;
-  width: 250px;
-  height: 200px;
+ width: 300px;
+  background-color: rgba(162, 210, 255, 0.65);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   text-align: center;
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease-in-out;
@@ -89,19 +93,43 @@ body{
 }
 
 #high {
-  color: #2F3A8F;
+  /* color: #2F3A8F; */
   font-weight: bold;
 }
 
 #low {
-  color: #3d478f;
+  /* color: #3d478f; */
   font-weight: bold;
 }
 
 #bid, #ask {
   font-weight: bold;
 }
-
+.footer {
+  background-color: #0F1A3A;
+  color: #fff;
+  border-top: 2px solid white;
+  font-family: "Poppins";
+  padding: 40px 20px;
+  width: 100vw;
+}
+ 
+.footer-container{
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  /* justify-content: space-between; */
+  width: 100vw;
+}
+ 
+.footer-column{
+  flex: 1;
+  min-width: 100px;
+}
+ 
+.footer-column p {
+  margin: 4px 0;
+}
 #menu {
   display: flex;
   list-style: none;
@@ -113,60 +141,32 @@ body{
   /* padding-right: 20px; */
 }
 
+/* os textos do menu */
 #menu a {
   display: flex;
   align-items: center;
   padding: 0.5rem;
   margin: 5px;
-  color: #000;
+  color: #000; 
   text-decoration: none;
 }
-
-.chamativa {
-  background: linear-gradient(180deg, #1A1B41 0%, #4345A7 50%, #2F3A8F 100%);
-  color: #FFF;
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  width: 1920px;
-  height: 350px;
+/* serviços são os p */
+.servicos{
+font-weight: 600;
+cursor: pointer;
+font-size: 1.2rem;
 }
 
-#logout-btn {
-  display: flex;
-  padding: 0.75rem 1.5rem;
-  background-color: #2F3A8F;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  justify-content: space-between;
-  align-items: center;
+#menu a:hover{
+color: #2F3A8F;
 }
 
-.servicos {
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-#menu a:hover {
-  color: #2F3A8F;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  border-top: 1px solid #2F3A8F;
-}
-
+/* faz o botão ficar invisivel */
 #btn-mobile {
-  display: none;
-  font-weight: 600;
+display: none;
+font-weight: 600;
 }
-
+/* cabeçalho é a barra inteira do menu */
 #cabecalho {
   display: flex;
   justify-content: space-between;
@@ -179,32 +179,81 @@ body{
   color: white;
   height: 80px;
   padding-right: 20px;
-  padding-bottom: 10px;
 }
 
 #cabecalho nav a {
   margin: 0 0.1rem;
   text-decoration: none;
-  color: #000000;
-  font-weight: 400;
+  color: #2F3A8F;
+  font-weight: 500;
 }
 
 #cabecalho nav a:hover {
   color: #4957d6;
 }
 
-#div-logo {
+#div-logo{
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
 
-#logo {
+#logo{
   padding: 20px 20px 20px 20px;
   cursor: pointer;
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   color: #2F3A8F;
+}
+
+.header-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  background-color: #e6f0ff;
+  color: #3b82f6;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+#nome {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.info span {
+  color: #4b5563;
+}
+
+/* adicionar logica no JS para verificar a variação da moeda */
+/* .positivo {
+  color: #22c55e;
+}
+
+.negativo {
+  color: #ef4444;
+} */
+
+.footer-card {
+  background-color: #f9fafb;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 .legenda2 {
@@ -230,6 +279,33 @@ body{
 
 .legenda_dois {
   font-size: 30px;
+}
+.chamativa {
+  background: #0F1A3A;
+  /* border-bottom: 2px solid white; */
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  width: 100vw;
+  height: 400px;
+}
+#logout-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3A8F;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.servicos {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 870px) {

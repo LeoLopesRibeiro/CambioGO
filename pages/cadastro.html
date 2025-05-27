@@ -13,33 +13,78 @@
   <body>
     <header id="cabecalho"></header>
 
-        <main id="container-login">
-          <section class="esquerda">
-            <h2 class="entrar">Cadastre-se</h2>
-            <form id="register-form">
-              <input type="text" name="name" id="name" placeholder="Insira seu nome" required />
-              <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required />
-              <input type="password" name="password" id="password" placeholder="Insira sua senha" required />
-              <input type="password" name="confirm" id="confirm_password" placeholder="Confirme sua senha" required />
-              <button type="submit">Criar a minha conta</button>
-            </form>
-          </section>
-    
-          <section class="direita">
-            <h2>Bem-vindo ao CambioGO!</h2>
-            <p class="entrar">Já possui cadastro?</p>
-            <a class="btn-cadastro" href="./login.html">Fazer login</a>
-          </section>
-        </main>
-    
-        <footer class="footer">
-          <img src="../img/logo.svg" alt="Logo CambioGo" height="40px" />
-          <h1 id="logo">CambioGO</h1>
-        </footer>
-    
-        <script type="module" src="../js/auth.js"></script>
-        <script type="module" src="../js/cadastro.js"></script>
-        <script type="module" src="../js/menu.js"></script>
-      </body>
-    </html>
-    
+    <main id="container-login">
+      <section class="esquerda">
+        <h2 class="entrar">Cadastre-se</h2>
+        <form id="register-form">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Insira seu nome"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Insira seu e-mail"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Insira sua senha"
+            required
+          />
+          <input
+            type="password"
+            name="confirm"
+            id="confirm_password"
+            placeholder="Confirme sua senha"
+            required
+          />
+          <button type="submit">Criar a minha conta</button>
+        </form>
+      </section>
+
+      <section class="direita">
+        <h2>Bem-vindo ao CambioGO!</h2>
+        <p class="entrar">Já possui cadastro?</p>
+        <a class="btn-cadastro" href="./login.html">Fazer login</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="../img/logo_branco.svg" alt="Logo CambioGo" height="40px" />
+        <div class="footer-column">
+          <h3>CambioGO</h3>
+          <p>2025 CambioGO Ltd.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Fale Conosco</h3>
+          <p>(11) 1234-1234</p>
+          <p>(11) 5678-5678</p>
+          <p>Av. Paulista - São Paulo, SP</p>
+          <p>contato@cambiogo.com.br</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Suporte</h3>
+          <ul>
+            <p>Política de Privacidade</p>
+            <p>Termos e condições</p>
+            <p>Sobre nós</p>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/cadastro.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+  </body>
+</html>
